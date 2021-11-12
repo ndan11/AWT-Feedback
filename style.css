@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.upper-part {
+  margin: 2rem;
+}
+.upper-part input {
+  margin: 1rem;
+  width: 30%;
+}
+.form-input {
+  width: 500px;
+  height: 25px;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row-1 {
+  width: 5%;
+}
+.row-2 {
+  width: 25%;
+}
+.row-3,
+.row-4,
+.row-5,
+.row-6,
+.row-7 {
+  width: 10%;
+}

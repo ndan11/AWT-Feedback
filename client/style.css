@@ -41,6 +41,11 @@
 .row-7 {
   width: 10%;
 }
+
+td{
+	text-align: center;
+}
+
 .btn {
   margin: 2rem 45%;
   padding: 1.2rem 3rem;

@@ -8,6 +8,10 @@ courseSelect.addEventListener('change', (event) => {
 	updateFacultySelectData()
 })
 
+facultySelect.addEventListener('change', (event) => {
+	getQuestions()
+})
+
 const getData = async () => {
 	fetch('http://localhost:5000/api/v1/subjects')
 		.then(res => res.json())

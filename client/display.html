@@ -12,11 +12,21 @@
 
 </head>
 <body>
-    <div class="upper-part">
-    Course: <input type="text" name="teacher"> <br>
-    ID : <input type="text" name="cid">
+	<div class="upper-part">
+    	Course: 
+		<select id="course"></select> <br/>
+    	Faculty: 
+		<select id="faculty"></select>
     </div>
-  
+	<div class="upper-part">
+		Semester : <span id="semester"></span><br/>
+		Academic Year : <span id="academicYear"></span><br/>
+		Degree : <span id="degree"></span><br/>
+		<br/>
+		No. of Students : <span id="studentCount"></span><br/>
+		Overall Feedback : <span id="overallFeedback"></span><br/>
+		No. of Feedback : <span id="feedbackCount"></span><br/>
+	</div>
     <table id="table">
         <thead>
           <tr>
@@ -31,6 +41,11 @@
           </tr>
         </thead>
       </table>
+	  <a href="./index.html">
+		<button>
+		  Add More Feedback
+	  	</button>
+	  </a>
 </body>
 <script src="./display.js"></script>
 </html>

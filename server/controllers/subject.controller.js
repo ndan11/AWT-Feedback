@@ -12,7 +12,7 @@ module.exports = {
 			await subject.save()
 			res.status(201).json({
 				error: false,
-				data: Subject.populate(subject,subjectPopulate)
+				data: await Subject.populate(subject,subjectPopulate)
 			})
 		}catch(error){
 			res.status(400).json({
@@ -30,7 +30,7 @@ module.exports = {
 				await subject.save()
 				res.status(200).json({
 					error: false,
-					data: Subject.populate(subject,subjectPopulate)
+					data: await Subject.populate(subject,subjectPopulate)
 				})
 			}else{
 				res.status(404).json({

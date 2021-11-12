@@ -13,10 +13,8 @@
 </head>
 <body>
     <div class="upper-part">
-    	Course: 
-		<select id="course"></select> <br/>
-    	ID : 
-		<select id="faculty"></select>
+    Course: <input type="text" name="teacher"> <br>
+    ID : <input type="text" name="cid">
     </div>
   
     <table id="table">
@@ -29,22 +27,10 @@
             <th class="row-5"> Feedback</th>
             <th class="row-6"></th>
             <th class="row-7"></th>
+
           </tr>
         </thead>
-        <tbody >
-        </tbody>
       </table>
-	  <button
-	  	onclick="submit()"
-	  >
-		  Submit Feedback
-	  </button>
-	  <a href="./display.html">
-		<button>
-		  View Feedback
-	  	</button>
-	  </a>
-	  
-      <script src="./index.js"></script>
 </body>
+<script src="./display.js"></script>
 </html>

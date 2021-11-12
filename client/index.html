@@ -13,9 +13,26 @@
 </head>
 <body>
     <div class="upper-part">
-    Course: <input type="text" name="teacher"> <br>
-    ID : <input type="text" name="cid">
-    </div>
+<form action="">
+  <label for="Course">Course Name</label>
+  <select id="Course" name="Course">
+    <option value="CE252">DAA</option>
+    <option value="HS152">HS</option>
+    <option value="CE355">OS</option>
+    <option value="CE144">EOE</option>
+  </select>
+</form>  
+    
+<form action="">
+  <label for="faculty">Faculty Name</label>
+  <select id="faculty" name="faculty">
+    <option value="A">Ashwin Makwana</option>
+    <option value="B">Rithesh Patel</option>
+    <option value="C">Ronak Patel</option>
+    <option value="D">Martin Parmar</option>
+  </select>
+</form>
+  </div>
   
     <table class="table">
         <thead>
@@ -207,5 +224,7 @@
 
         </tbody>
       </table>
+      <button type="submit" class="btn">SUBMIT</button>
 </body>
 </html>
+

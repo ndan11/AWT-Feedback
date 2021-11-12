@@ -38,3 +38,9 @@
 .row-7 {
   width: 10%;
 }
+.btn {
+  margin: 2rem 45%;
+  padding: 1.2rem 3rem;
+  background-color: bisque;
+  border: 3px solid coral;
+}

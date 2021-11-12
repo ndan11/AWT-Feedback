@@ -58,8 +58,10 @@ module.exports = {
 	addFeedback: async(req,res) => {
 		try{
 			const feedback = await Feedback.findOne({
-				subject: req.params.subjectId,
-				faculty: req.params.facultyId
+				$and : [
+					{ subject: req.params.subjectId },
+					{ faculty: req.params.facultyId }
+				]
 			})
 			feedback.addFeedback(req.body.feedback)
 			await feedback.save()
@@ -67,7 +69,7 @@ module.exports = {
 				error: false,
 				data: await Feedback.populate(feedback,feedbackPopulate)
 			})
-		}catch{
+		}catch(error){
 			res.status(400).json({
 				error: true,
 				message: "Could not add feedback."

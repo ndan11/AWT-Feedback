@@ -2,7 +2,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+a {
+  color: aliceblue;
+}
 .upper-part {
   margin: 2rem;
 }

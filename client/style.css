@@ -5,14 +5,16 @@
 
 .upper-part {
   margin: 2rem;
+  font-size: 1.6rem;
 }
 .upper-part input {
   margin: 1rem;
   width: 30%;
+  font-size: 5rem;
 }
 .form-input {
   width: 500px;
-  height: 25px;
+  height: 40px;
 }
 
 .table {
@@ -24,6 +26,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 1.2rem;
 }
 .row-1 {
   width: 5%;
